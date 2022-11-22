@@ -3,7 +3,6 @@
     internal class Program
     {
 
-
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
         public const int EMP_RATE_PER_HOUR = 20;
@@ -36,6 +35,7 @@
                 Console.WriteLine("Emp Wage : " + empWage);
             }
             Console.WriteLine("Toatal Employee Wage : " + totalEmpWage);
+
 
         }
     }
