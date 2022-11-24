@@ -15,6 +15,7 @@
             int totalEmpHrs = 0;
             int totalWorkingDays = 0;
             // Computation
+
             while (totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
                 totalWorkingDays++;
@@ -32,12 +33,16 @@
                         empHrs = 0;
                         break;
                 }
-                int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
-                Console.WriteLine("Toatal Employee Wage : " + totalEmpWage);
-
-
+                totalEmpHrs += empHrs;
+                Console.WriteLine("Day# : " + totalWorkingDays + "Emp Hrs : " + empHrs);
             }
+            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Toatal Employee Wage : " + totalEmpWage);
+
+        }
+            
+            
         }
     }
-}
+
 
